@@ -5011,7 +5011,21 @@ color: white;
             font-size: 15px;
             color: #5A5A5A;
         }
-        
+     .post-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-content.expanded {
+  -webkit-line-clamp: unset;
+}
+
+.toggle{
+  color: var(--main-color);
+  font-weight: 600;
+}
         .show-more {
             padding: 5px;
             text-align: center;
@@ -5038,7 +5052,7 @@ color: white;
 
 
 #newsfeed {
-  height: 642px;
+  height: 609px;
   overflow-y: auto; 
   overflow-x: hidden;
   scrollbar-width: thin;
