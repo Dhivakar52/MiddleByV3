@@ -79,7 +79,18 @@
   </ul>
 </li>
 
-    <li><a class="dropdown-item" href="digital.html">Digital Technology</a></li>
+
+
+
+
+    <li><a class="dropdown-item" >Digital Technology</a>
+    <ul class="inner-submenu">
+    <li><a class="dropdown-item" href="ap.html">Accounts Payable</a></li>
+    <li><a class="dropdown-item" href="ar.html">Accounts Receivable</a></li>
+    <li><a class="dropdown-item" href="finance.html">Finance</a></li>
+  </ul></li>
+
+
     <li><a class="dropdown-item" href="communication.html">Communication</a></li>
     <li><a class="dropdown-item" href="corporate_it.html">Corporate & IT</a></li>
      <li><a class="dropdown-item" href="ehs.html">EHS</a></li>
@@ -87,6 +98,7 @@
     <li><a class="dropdown-item" href="legal.html">Legal</a></li>
     <li><a class="dropdown-item" href="supplychain.html">Supply Chain</a></li>
     <li><a class="dropdown-item " href="tax.html">Tax</a></li>
+  
   </ul>
 </li>
  
@@ -1285,16 +1297,26 @@ This is how we do it.</p>
     <script src="assets/js/custom.js" type="text/javascript"></script>
     <!-- jQuery END -->
 
-   <script>
-  document.querySelectorAll('.submenu-toggle').forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      e.preventDefault();
-      e.stopPropagation();
+<script>
+document.querySelectorAll('.submenu-toggle').forEach(function (el) {
+  el.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
 
-      const submenu = this.nextElementSibling;
-      submenu.classList.toggle('show');
+    const currentSubmenu = this.nextElementSibling;
+
+    document.querySelectorAll('.inner-submenu.show').forEach(function (menu) {
+      if (menu !== currentSubmenu) {
+        menu.classList.remove('show');
+      }
     });
+
+
+    currentSubmenu.classList.toggle('show');
   });
+});
 </script>
+
+
   </body>
 </html>
