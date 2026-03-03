@@ -1169,7 +1169,7 @@ align-items: baseline;
 
  .form-control {
    padding: 12px;
-   margin-bottom: 15px;
+   /* margin-bottom: 15px; */
    border-radius: 5px;
    border: 1px solid #ced4da;
  }
@@ -2890,6 +2890,9 @@ border: none;
             box-shadow: none !important;
             border-color: #dee2e6 !important;
           
+        }
+        .formBorderRemove{
+          background-color: #ffffff !important;
         }
         
         .card-hover-effect {
