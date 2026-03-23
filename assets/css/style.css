@@ -1081,8 +1081,8 @@ padding: 20px 20px 15px;
 
  .section-title {
    color: var(--text-color-white);
-   font-size: 22px;
-   font-weight: bold;  
+   font-size: 20px;
+   font-weight: 600;  
  }
  .section-header-card{
   display: flex;
@@ -1410,7 +1410,7 @@ width: 12%;
     position: relative;
     height: auto;
     background-image: url(../images/middlebyImages/environment.png);
-    padding: 53px 40px;
+    padding: 20px 40px;
     background-position: right !important;
 }
 
@@ -1465,6 +1465,9 @@ width: 12%;
   /* width: 39px;
   height: 40px; */
   /* object-fit: cover; */
+}
+.banner-overlay-one{
+padding: 20px 0px;
 }
  
 .mission_text ul{
@@ -5314,7 +5317,7 @@ color: white;
 }
  .section-title_v2 {
     color: var(--text-color-white);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     background: var(--main-color);
     padding: 7px 15px;
