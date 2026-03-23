@@ -5321,7 +5321,9 @@ hr{
   background: var(--main-color);
   padding: 7px 15px;
 }
-
+.blue_bg img{
+  width: 27px;
+}
 .digital_table_border{
   border: 1px solid #0F568080;
   border-radius:8px;
