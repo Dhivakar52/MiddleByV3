@@ -503,6 +503,7 @@ a:hover {
     background-position: 38% 27%;
   color: white;
   padding: 10px;
+  margin: 0px 0px 0px;
 }
 .banner_1 {
 
@@ -601,7 +602,9 @@ color: #EFAD4F;
 } */
 
 
-
+#navbarNav .nav-link:hover{
+  color: var(--red-color) !important;
+}
 
 
 
@@ -1308,6 +1311,7 @@ width: 12%;
         }
 .inner-card{
  padding: 30px 20px 0px;
+ border-bottom: 1px solid #00000029;
 }
 .inner-card img{
   width: 158px;
@@ -1318,7 +1322,19 @@ width: 12%;
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         } */
+.team-card:hover {
+  border: 1px solid var(--red-color);
+}
 
+/* Button change when card hover */
+.team-card:hover .view-more-btn  {
+  background-color: var(--red-color);
+  color: #fff;
+  border-color: var(--red-color);
+}
+.team-card:hover .inner-card {
+  border-bottom: 1px solid var(--red-color);
+}
 
 
         .team-name {
@@ -1344,7 +1360,7 @@ width: 12%;
             border-radius: 25px;
             font-weight: 400;
             display: inline-block;
-            margin-bottom: 20px;
+            margin: 20px 0px;
             font-size: 16px;
         }
             .view-more-btn:hover {
@@ -1387,7 +1403,7 @@ width: 12%;
   /* Digital  */
 .banner_digital {
     position: relative;
-    height: 188px;
+    height: 110px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/banner_digital.png);
 }
 .banner_ehs {
@@ -1397,6 +1413,8 @@ width: 12%;
     padding: 53px 40px;
     background-position: right !important;
 }
+
+
 
 
 .banner_account {
@@ -1421,8 +1439,8 @@ width: 12%;
 }
 .banner_legal {
     position: relative;
-    height: 188px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)),url(../images/middlebyImages/environment.png);
+    height: 110px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/banner_digital.png);
 }
 .banner_supplyChain {
     position: relative;
@@ -1478,7 +1496,7 @@ width: 12%;
   /* padding: 10px; */
 }
 .core_card {
-  height: 75px;
+  height: 90px;
     display: flex;
     align-items: center;
     padding: 0px 10px;
@@ -2054,7 +2072,7 @@ margin-bottom: 15px;
   position: absolute;
   right: 0%;
   height: 100%;
-  /* top: 30%; */
+  top: 4%;
 }
 .vision-content h3 {
   font-size: 22px;
@@ -3827,6 +3845,7 @@ border: none;
 .entry-details p strong{
   color: #000000;
   font-size: 16px;
+  font-weight: 600;
 }
 .timline_height {
     height: 450px;
@@ -4312,7 +4331,7 @@ border: none;
         }
        .ehs-card {
            
-            height: 150px;
+            height: 130px;
         }
                .digital-card {
                 height: 85px;
@@ -5296,7 +5315,7 @@ color: white;
  .section-title_v2 {
     color: var(--text-color-white);
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 600;
     background: var(--main-color);
     padding: 7px 15px;
  }
@@ -5304,7 +5323,7 @@ color: white;
 .gray-bg {
     background: #F5F5F5;
     margin: 10px 0px 0px;
-    padding: 10px 10px !important;
+    padding: 15px 20px !important;
 }
 hr{
   margin: 0px 0px 0px;
@@ -5315,6 +5334,7 @@ hr{
 }
 .bg-purple{
   background-color: var(--purple-color);
+  border-bottom: 1px solid #0032504D;
 }
 
 .blue_bg{
@@ -5355,7 +5375,24 @@ font-size: 22px;
   justify-content: center;
 }
 
+.short-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* show only 1 line */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
+.short-text.expanded {
+  -webkit-line-clamp: unset;
+}
+
+.read-toggle {
+  color: var(--main-color)!important;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 5px;
+}
 
 
 

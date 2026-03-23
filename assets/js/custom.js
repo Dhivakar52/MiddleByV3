@@ -111,5 +111,19 @@ toggleBtns.forEach((btn, index) => {
         });
 
 
+document.querySelectorAll('.read-toggle').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const text = this.previousElementSibling;
+
+    text.classList.toggle('expanded');
+
+    if (text.classList.contains('expanded')) {
+      this.innerText = "Less";
+    } else {
+      this.innerText = "More";
+    }
+  });
+});
+
 
 });
