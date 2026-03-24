@@ -2516,6 +2516,11 @@ height: 410px;
 background: #F5F5F5;
 }
 
+.community_card .card{
+  height: 503px;
+  border: 0px;
+}
+
 .latestMiddleCard .card:hover {
   box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
   
