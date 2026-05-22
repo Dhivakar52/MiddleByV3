@@ -2558,8 +2558,8 @@ background: #F5F5F5;
 
 .topImg img.card-img-top {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  /* height: 200px; */
+  object-fit: contain;
 }
 
 .topImg .play-icon {
@@ -2748,13 +2748,17 @@ border: none;
     font-weight: 600;
     margin: 10px 0px;
 }
-.relative_card_content p{
-   color: var(--main-color);
-    font-size: 16px;
-    font-weight: 400;
-   margin: 10px 0px;
-}
+.relative_card_content p {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0px;
 
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 
 
