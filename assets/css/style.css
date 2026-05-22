@@ -510,25 +510,25 @@ a:hover {
 
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
     url('../images/banner/homepage_1.jpg');
-    height: 180px;
+    height: 160px;
  
 }
 .banner_2 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
     url('../images/banner/homepage_2.jpg');
-    height: 180px;
+   height: 160px;
  
 }
 .banner_3 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
     url('../images/banner/homepage_3.jpg');
-   height: 180px;
+     height: 160px;
  
 }
 .banner_4 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
     url('../images/banner/homepage_4.jpg');
-     height: 180px;
+      height: 160px;
  
 }
 
