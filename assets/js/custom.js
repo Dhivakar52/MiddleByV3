@@ -53,8 +53,8 @@ $('.home-banner-carousel').owlCarousel({
       margin: 10,
       nav: false,
       dots: true,
-      autoplay: false,
-      autoplayTimeout: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
       autoplayHoverPause: true,
       items: 1,
      
